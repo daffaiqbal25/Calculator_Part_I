@@ -1,0 +1,147 @@
+@import "https://fonts.googleapis.com/css?family=Poppins";
+
+* {
+  outline: 0;
+  transition: all 0.5s ease;
+}
+
+body {
+  background: antiquewhite;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+#header {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.calculator {
+  text-align: center;
+  heigh: relative;
+  width: 260px;
+  display: block;
+  padding-top: 50px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #23212b;
+}
+
+.display {
+  padding: 8px;
+  margin: 12px 12px 21px 16px;
+  text-align: center;
+  justify-content: flex-end;
+  font-family: "Poppins", monospace;
+  color: white;
+  height: 120px;
+}
+
+#result p {
+  font-size: 1.8em;
+}
+
+#result,
+#previous {
+  text-align: right;
+}
+
+.keyboard {
+  text-align: center;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background-color: #272e32;
+  margin: 5px;
+  color: white;
+}
+
+.clr,
+.pls,
+.per {
+  color: #0cd696;
+}
+
+.btn.clr{
+  width : 39%;
+}
+.operator,
+.dev,
+.equal {
+  color: #e95d5d;
+}
+
+.theme-toggler {
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-toggler.active {
+  color: #333;
+}
+.theme-toggler.active::before {
+  background-color: #fff;
+}
+.theme-toggler::before {
+  content: "";
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #333;
+  z-index: -1;
+}
+
+/* dark theme */
+.calculator {
+  background-color: #fbfefb;
+}
+.calculator .display {
+  color: #0a1e23;
+}
+.calculator .keyboard{
+ background-color: #272e32;
+}
+
+.calculator button#clear {
+  background-color: #db7f8e;
+  color: #ffdbda;
+}
+.calculator button.btn-number {
+  background-color: #339989;
+  color: #7de2d1;
+}
+.calculator button.btn-operator {
+  background-color: #b6a6ca;
+  color: #f1e4f3;
+}
+.calculator button.btn-equal {
+  background-color: #19647e;
+  color: #eee5e5;
+}
+/* light theme */
+.calculator.light {
+  background-color: #23212b;
+}
+.calculator.light .display {
+  color: #ffffff;
+}
+.calculator.light button#clear {
+  background-color: #785964;
+  color: #d5c7bc;
+}
+.calculator.light .keyboard{
+  background-color: #fffffff;
+}
+.calculator.light .btn {
+  background-color: #48B351;
+  color: #f8fafb;
+}
